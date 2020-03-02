@@ -1,0 +1,206 @@
+<!DoCTypE html>
+<html>
+  <head>
+    <title>
+      Andrew Fishburn's Resume
+    </title>
+    <meta name="viewport" content="maxium-width=device-width, width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+  </head>
+  <body>
+    <h1> Andrew Fishburn </h1>
+    <a title='My phone number' style="text-align:center" target='_blank' href="https://www.usacheckphones.info/phone-number/623-326-0108">
+      623-326-0108
+    </a>
+    &nbsp &nbsp
+    <a title='My home address' target='_blank' href="https://www.google.com/maps/place/8719+W+John+Cabot+Rd,+Peoria,+AZ+85382/data=!4m2!3m1!1s0x872b42a3a138ab49:0x9fe596ffbb3a87e2?sa=X&ved=2ahUKEwitkvGuw77nAhWCpZ4KHTfICTwQ8gEwAHoECAsQAQ">
+      8719 W. John Cabot Rd.
+    </a>
+    &nbsp &nbsp
+    <a title='My email' target='_blank' href="mailto:Drewfishburn1@gmail.com">
+      Drewfishburn1@gmail.com
+    </a>
+<hr>
+<img title='I am an image' src="SelfPicture.jpg" width="400" height="400" alt="A picture of me!" style="transform:rotate(270deg);">
+<div id="container">
+<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1">Education</label>
+				<article>
+<table style="width:100%">
+ <tr>
+   <th>Institution</th>
+   <th>Degree</th>
+   <th>Completed</th>
+ </tr>
+ <tr>
+   <td>Sunrise Mountin High School</td>
+   <td>High School Diploma</td>
+   <td>May 2017</td>
+ </tr>
+ <tr>
+   <td>Arizons State University</td>
+   <td>Bachelors in Digital Culture(Media Processing)</td>
+   <td>Ongoing</td>
+ </tr>
+</table>
+</article>
+  </div>
+			<div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Work Experience</label>
+				<article>
+    <p>
+      <h3>Kroger,  Peoria, AZ - Stocker/Cashier</h3>
+      <h5>May 2019 - PRESENT</h5>
+      <ol>
+       <li>Ensure the store is stocked and looks orderly.</li>
+       <li>Assist customers in checking out.</li>
+       <li>Loaded and unloaded loads of groceries into the back room.</li>
+     </ol>
+    </p>
+    <p>
+      <h3>Firebirds Woodfired Grill, Peoria, AZ - Guest Assistant</h3>
+      <h5>May 2016 - August 2017</h5>
+      <ol>
+       <li>Ensured the restaurant was stocked and clean.</li>
+       <li>Assisted servers in doing the needs of customers.</li>
+       <li>Completed other odd jobs around the restaurant.</li>
+     </ol>
+    </p>
+    <p>
+      <h3>Senior Lifestyles, Peoria, AZ - Waiter/Busser</h3>
+      <h5>February 2015 - December 2015</h5>
+      <ol>
+       <li>Greeted guests with a smile and a positive attitude. </li>
+       <li>Took the orders of guests in a timely manner. </li>
+       <li>Anticipated the need of guests and acted accordingly. </li>
+     </ol>
+    </p>
+  </article>
+    </div>
+    <div>
+      <input type="checkbox" id="check-3" />
+      <label for="check-3">References</label>
+      <article>
+    <p>
+      <h3>References</h3>
+      <ul>
+        <li>Vonda Fishburn 623-570-9777</li>
+        <li>Cory Fishburn 623-336-2836</li>
+        <li>Parker Cohensitt 623-980-5804</li>
+    </p>
+  </article>
+    </div>
+  </body>
+</html>
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+h1, h2
+{
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+h2
+{
+	margin: 0 0 1em 0;
+}
+h3, h5
+{
+	font-weight: bold;
+	margin-left: 50px;
+}
+ol, ul
+{
+	margin-left: 70px;
+}
+th
+{
+	font-weight: bold;
+	font-size: 150%;
+}
+td
+{
+	text-align: center;
+}
+a img
+{
+	margin: 0 auto;
+}
+body
+{
+	background: Thistle;
+	color: black;
+}
+label
+{
+	margin-left: 10px;
+	font-size: 200%;
+}
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+#container
+{
+	text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+#accordion input
+{
+	display: none;
+}
+#accordion label
+{
+	background: #ff90ff;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover
+{
+	background: #ccc;
+}
+
+#accordion input:checked + label
+{
+	background: #d110d1;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: black;
+	margin-bottom: 0;
+}
+#accordion article
+{
+	background: Thistle;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p
+{
+	padding: 1em;
+}
+#accordion input:checked article
+{
+}
+#accordion input:checked ~ article
+{
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
